@@ -1,0 +1,21 @@
+ ALGORITHM sentence
+ VAR
+    sent:string;
+    i,nb-w,nb-c , nb-v:INTEGER=1
+
+
+ BEGIN
+   REPEAT
+      read (sent)
+   UNTIL (sent[sent.length-1]= ".")  
+   nb-c:=sent.length-2 ;
+   FOR i FROM 0 TO sent.length STEP 1 DO
+      IF ( sent[i] ="") THEN
+         nb-w :=nb+1
+         nb-c:=nb+1
+      END_IF
+      sent[i]="a" or  sent[i]="e" or  sent[i]="i" or sent[i]="u" or sent[i]=" a"
+      wb-v+=wb-v+1
+   END_FOR
+
+    
